@@ -21,4 +21,8 @@
     <param name="android-package" value="org.apache.cordova.Device" />
 </feature>
 
+<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.InAppBrowser" />
+</feature>
+
 </widget>

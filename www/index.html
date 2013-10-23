@@ -25,9 +25,17 @@
   </head>
   <body>
     <p id="deviceProperties">Loading device properties...</p>
+    <button onclick="go();">hello</button>
     <script type="text/javascript" charset="utf-8">
-    navigator.app.loadUrl('http://www.google.com', { openExternal:true } );
+    
+    function go()
+    {
+         var ref = window.open('http://apache.org', '_blank', 'hidden=yes');
+         ref.show();
+    }
+
     </script>
+ 
   </body>
 </html>
 
