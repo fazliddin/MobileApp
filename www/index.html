@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Device Properties Example</title>
+    <title>Mobile CRM</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -13,15 +13,10 @@
     // device APIs are available
     //
     function onDeviceReady() {
-        /*var element = document.getElementById('deviceProperties');
-        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +
-                            'Device Cordova: '  + device.cordova  + '<br />' +
-                            'Device Platform: ' + device.platform + '<br />' +
-                            'Device UUID: '     + device.uuid     + '<br />' +
-                            'Device Version: '  + device.version  + '<br />';
-         */
-        dev_uuid = device.uuid;            
-     	var ref = window.open('http://aqua.priorum.com/fsearch/index.php?uuid='+dev_uuid, '_blank', 'hidden=yes');
+  
+        device_uuid = device.uuid;
+        device_plat = device.platform;  
+     	var ref = window.open('http://aqua.priorum.com/fsearch/index.php?uuid='+device_uuid+'&device='+device_plat, '_blank', 'hidden=yes');
      	ref.show();
     
     }
@@ -29,9 +24,7 @@
     </script>
   </head>
   <body>
-    <p id="deviceProperties">Loading device properties...</p>
-    <button onclick="go();">hello</button>
-
+    <center><h1 id="deviceProperties">Loading...</h1></center>
   </body>
 </html>
 
