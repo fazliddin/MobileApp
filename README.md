@@ -1,4 +1,4 @@
-# Mobile CRM
+# Crossplatform smartphone application for websites
 
-> An application to visit eshop.
+> Create your own mobile app easyli for any website
 
